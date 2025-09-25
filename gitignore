@@ -1,0 +1,11 @@
+# 忽略一切文件
+*
+
+# 保留 Python 源码文件
+!*.py
+
+# 保留子目录里的 Python 文件
+!*/
+
+# 保留 .gitignore 自己
+!.gitignore

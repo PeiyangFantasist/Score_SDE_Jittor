@@ -1,0 +1,4 @@
+python /home/a516/score_sde_jittor/main.py \
+    --config /home/a516/score_sde_jittor/configs/ve/cifar10_ddpm.py \
+    --workdir /home/a516/score_sde_jittor/train_dir \
+    --mode train
