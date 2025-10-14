@@ -17,5 +17,7 @@ dist/
 # Tests
 .pytest_cache/
 
+train_dir/
+
 # Other
 *.DS_Store
