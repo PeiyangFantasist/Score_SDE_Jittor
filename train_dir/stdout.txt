@@ -1,61 +1,11 @@
-WARNING - utils.py - 2025-09-24 20:57:38,254 - No checkpoint found at /home/a516/score_sde_jittor/train_dir/checkpoints-meta/checkpoint.pth. Returned the same state as input
-INFO - dataset_info.py - 2025-09-24 20:57:38,258 - Load dataset info from /home/a516/tensorflow_datasets/cifar10/3.0.2
-WARNING - options.py - 2025-09-24 20:57:38,261 - options.experimental_threading is deprecated. Use options.threading instead.
-WARNING - options.py - 2025-09-24 20:57:38,261 - options.experimental_threading is deprecated. Use options.threading instead.
-INFO - dataset_builder.py - 2025-09-24 20:57:38,261 - Reusing dataset cifar10 (/home/a516/tensorflow_datasets/cifar10/3.0.2)
-INFO - logging_logger.py - 2025-09-24 20:57:38,321 - Constructing tf.data.Dataset cifar10 for split train, from /home/a516/tensorflow_datasets/cifar10/3.0.2
-WARNING - options.py - 2025-09-24 20:57:38,381 - options.experimental_threading is deprecated. Use options.threading instead.
-WARNING - options.py - 2025-09-24 20:57:38,381 - options.experimental_threading is deprecated. Use options.threading instead.
-INFO - dataset_builder.py - 2025-09-24 20:57:38,382 - Reusing dataset cifar10 (/home/a516/tensorflow_datasets/cifar10/3.0.2)
-INFO - logging_logger.py - 2025-09-24 20:57:38,398 - Constructing tf.data.Dataset cifar10 for split test, from /home/a516/tensorflow_datasets/cifar10/3.0.2
-INFO - run_lib.py - 2025-09-24 20:57:38,460 - Starting training loop at step 0.
-INFO - run_lib.py - 2025-09-24 20:57:40,149 - step: 0, training_loss: 1.53125e+03
-INFO - run_lib.py - 2025-09-24 20:57:41,091 - step: 0, eval_loss: 1.51890e+03
-INFO - run_lib.py - 2025-09-24 20:57:45,765 - step: 50, training_loss: 1.53427e+03
-INFO - run_lib.py - 2025-09-24 20:57:50,306 - step: 100, training_loss: 1.47477e+03
-INFO - run_lib.py - 2025-09-24 20:57:50,410 - step: 100, eval_loss: 1.51393e+03
-INFO - run_lib.py - 2025-09-24 20:57:55,040 - step: 150, training_loss: 1.39618e+03
-INFO - run_lib.py - 2025-09-24 20:57:59,876 - step: 200, training_loss: 1.28658e+03
-INFO - run_lib.py - 2025-09-24 20:57:59,998 - step: 200, eval_loss: 1.26635e+03
-INFO - run_lib.py - 2025-09-24 20:58:04,992 - step: 250, training_loss: 1.16557e+03
-INFO - run_lib.py - 2025-09-24 20:58:10,283 - step: 300, training_loss: 1.00799e+03
-INFO - run_lib.py - 2025-09-24 20:58:10,407 - step: 300, eval_loss: 1.05541e+03
-INFO - run_lib.py - 2025-09-24 20:58:15,484 - step: 350, training_loss: 9.21170e+02
-INFO - run_lib.py - 2025-09-24 20:58:20,661 - step: 400, training_loss: 7.49416e+02
-INFO - run_lib.py - 2025-09-24 20:58:20,778 - step: 400, eval_loss: 7.30130e+02
-INFO - run_lib.py - 2025-09-24 20:58:25,949 - step: 450, training_loss: 5.37547e+02
-INFO - run_lib.py - 2025-09-24 20:58:31,217 - step: 500, training_loss: 4.37253e+02
-INFO - run_lib.py - 2025-09-24 20:58:31,335 - step: 500, eval_loss: 5.06761e+02
-INFO - run_lib.py - 2025-09-24 20:58:36,537 - step: 550, training_loss: 4.84061e+02
-INFO - run_lib.py - 2025-09-24 20:58:41,839 - step: 600, training_loss: 2.12142e+02
-INFO - run_lib.py - 2025-09-24 20:58:41,960 - step: 600, eval_loss: 3.31766e+02
-INFO - run_lib.py - 2025-09-24 20:58:47,182 - step: 650, training_loss: 2.26844e+02
-INFO - run_lib.py - 2025-09-24 20:58:52,344 - step: 700, training_loss: 1.95209e+02
-INFO - run_lib.py - 2025-09-24 20:58:52,460 - step: 700, eval_loss: 7.99500e+01
-INFO - run_lib.py - 2025-09-24 20:58:57,614 - step: 750, training_loss: 2.12760e+02
-INFO - run_lib.py - 2025-09-24 20:59:02,864 - step: 800, training_loss: 1.08200e+02
-INFO - run_lib.py - 2025-09-24 20:59:02,984 - step: 800, eval_loss: 1.84508e+02
-INFO - run_lib.py - 2025-09-24 20:59:08,252 - step: 850, training_loss: 1.23032e+02
-INFO - run_lib.py - 2025-09-24 20:59:13,560 - step: 900, training_loss: 1.32972e+02
-INFO - run_lib.py - 2025-09-24 20:59:13,680 - step: 900, eval_loss: 2.23475e+02
-INFO - run_lib.py - 2025-09-24 20:59:18,934 - step: 950, training_loss: 2.52611e+02
-INFO - run_lib.py - 2025-09-24 20:59:24,253 - step: 1000, training_loss: 1.54814e+02
-INFO - run_lib.py - 2025-09-24 20:59:24,377 - step: 1000, eval_loss: 2.28400e+02
-INFO - run_lib.py - 2025-09-24 20:59:29,710 - step: 1050, training_loss: 1.76231e+02
-INFO - run_lib.py - 2025-09-24 20:59:35,054 - step: 1100, training_loss: 1.92984e+02
-INFO - run_lib.py - 2025-09-24 20:59:35,174 - step: 1100, eval_loss: 3.34639e+02
-INFO - run_lib.py - 2025-09-24 20:59:40,451 - step: 1150, training_loss: 2.11217e+02
-INFO - run_lib.py - 2025-09-24 20:59:45,647 - step: 1200, training_loss: 2.36208e+02
-INFO - run_lib.py - 2025-09-24 20:59:45,778 - step: 1200, eval_loss: 2.31235e+02
-INFO - run_lib.py - 2025-09-24 20:59:51,014 - step: 1250, training_loss: 1.76049e+02
-INFO - run_lib.py - 2025-09-24 20:59:56,277 - step: 1300, training_loss: 2.05977e+02
-INFO - run_lib.py - 2025-09-24 20:59:56,393 - step: 1300, eval_loss: 1.07851e+02
-INFO - run_lib.py - 2025-09-24 21:00:01,475 - step: 1350, training_loss: 1.51289e+02
-INFO - run_lib.py - 2025-09-24 21:00:06,634 - step: 1400, training_loss: 3.03128e+02
-INFO - run_lib.py - 2025-09-24 21:00:06,751 - step: 1400, eval_loss: 2.85685e+02
-INFO - run_lib.py - 2025-09-24 21:00:11,928 - step: 1450, training_loss: 1.58990e+02
-INFO - run_lib.py - 2025-09-24 21:00:17,231 - step: 1500, training_loss: 1.91340e+02
-INFO - run_lib.py - 2025-09-24 21:00:17,353 - step: 1500, eval_loss: 9.87400e+01
-INFO - run_lib.py - 2025-09-24 21:00:22,685 - step: 1550, training_loss: 1.04421e+02
-INFO - run_lib.py - 2025-09-24 21:00:28,055 - step: 1600, training_loss: 1.37299e+02
-INFO - run_lib.py - 2025-09-24 21:00:28,176 - step: 1600, eval_loss: 1.57804e+02
+WARNING - utils.py - 2025-10-14 17:03:19,225 - No checkpoint found at score_sde_jittor/train_dir/checkpoints-meta/checkpoint.pth. Returned the same state as input
+INFO - dataset_info.py - 2025-10-14 17:03:19,231 - Load dataset info from /home/a516/tensorflow_datasets/celeb_a/2.0.1
+WARNING - options.py - 2025-10-14 17:03:19,236 - options.experimental_threading is deprecated. Use options.threading instead.
+WARNING - options.py - 2025-10-14 17:03:19,236 - options.experimental_threading is deprecated. Use options.threading instead.
+INFO - dataset_builder.py - 2025-10-14 17:03:19,236 - Reusing dataset celeb_a (/home/a516/tensorflow_datasets/celeb_a/2.0.1)
+INFO - logging_logger.py - 2025-10-14 17:03:19,337 - Constructing tf.data.Dataset celeb_a for split train, from /home/a516/tensorflow_datasets/celeb_a/2.0.1
+WARNING - options.py - 2025-10-14 17:03:19,463 - options.experimental_threading is deprecated. Use options.threading instead.
+WARNING - options.py - 2025-10-14 17:03:19,463 - options.experimental_threading is deprecated. Use options.threading instead.
+INFO - dataset_builder.py - 2025-10-14 17:03:19,463 - Reusing dataset celeb_a (/home/a516/tensorflow_datasets/celeb_a/2.0.1)
+INFO - logging_logger.py - 2025-10-14 17:03:19,533 - Constructing tf.data.Dataset celeb_a for split validation, from /home/a516/tensorflow_datasets/celeb_a/2.0.1
+INFO - run_lib.py - 2025-10-14 17:03:19,680 - Starting training loop at step 0.

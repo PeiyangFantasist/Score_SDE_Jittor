@@ -252,5 +252,5 @@ def downsample_2d(x, k=None, factor=2, gain=1):
     k = [1] * factor
   k = _setup_kernel(k) * gain
   p = k.shape[0] - factor
-  return upfirdn2d(x, jt.Var(k),
-                   down=factor, pad=((p + 1) // 2, p // 2))
+
+  return upfirdn2d(x, jt.Var(k), down=factor, pad=((p + 1) // 2, p // 2))

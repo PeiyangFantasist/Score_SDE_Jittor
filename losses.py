@@ -88,11 +88,11 @@ def get_sde_loss_fn(sde, train, reduce_mean=True, continuous=True, likelihood_we
     score = score_fn(perturbed_data, t)
 
     if not likelihood_weighting:
-      losses = jt.square(score * std[:, None, None, None] + z)
+      losses = (score * std[:, None, None, None] + z) ** 2
       losses = reduce_op(losses.reshape(losses.shape[0], -1), dim=-1)
     else:
       g2 = sde.sde(jt.zeros_like(batch), t)[1] ** 2
-      losses = jt.square(score + z / std[:, None, None, None])
+      losses = (score + z / std[:, None, None, None]) ** 2
       losses = reduce_op(losses.reshape(losses.shape[0], -1), dim=-1) * g2
 
     loss = jt.mean(losses)
@@ -140,7 +140,7 @@ def get_ddpm_loss_fn(vpsde, train, reduce_mean=True):
     perturbed_data = sqrt_alphas_cumprod[labels, None, None, None] * batch + \
                      sqrt_1m_alphas_cumprod[labels, None, None, None] * noise
     score = model_fn(perturbed_data, labels)
-    losses = jt.square(score - noise)
+    losses = (score - noise) ** 2
     losses = reduce_op(losses.reshape(losses.shape[0], -1), dim=-1)
     loss = jt.mean(losses)
     return loss

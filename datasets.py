@@ -51,7 +51,7 @@ def crop_resize(image, resolution):
     method=tf.image.ResizeMethod.BICUBIC)
   return tf.cast(image, tf.uint8)
 
-
+'''
 def resize_small(image, resolution):
   """Shrink an image to the given resolution."""
   h, w = image.shape[0], image.shape[1]
@@ -59,7 +59,35 @@ def resize_small(image, resolution):
   h = tf.round(h * ratio, tf.int32)
   w = tf.round(w * ratio, tf.int32)
   return tf.image.resize(image, [h, w], antialias=True)
+'''
 
+def resize_small(img, size):
+    """
+    Resize image so that its smaller side equals `size`,
+    maintaining aspect ratio. Compatible with both CIFAR-10 and CelebA.
+
+    Args:
+        img: tf.Tensor, shape [H, W, C]
+        size: int, desired smaller side
+
+    Returns:
+        img: tf.Tensor, resized image
+    """
+    # 获取原始高宽
+    h = tf.shape(img)[0]
+    w = tf.shape(img)[1]
+
+    # 计算缩放比例，确保为 float
+    ratio = tf.cast(size, tf.float32) / tf.cast(tf.minimum(h, w), tf.float32)
+
+    # 计算新的高宽，并 cast 为 int32
+    h_new = tf.cast(tf.round(tf.cast(h, tf.float32) * ratio), tf.int32)
+    w_new = tf.cast(tf.round(tf.cast(w, tf.float32) * ratio), tf.int32)
+
+    # 使用 tf.image.resize 调整图像大小
+    img = tf.image.resize(img, [h_new, w_new])
+
+    return img
 
 def central_crop(image, size):
   """Crop the center of an image to the given size."""
